@@ -1,0 +1,167 @@
+/* General body styling */
+body {
+  background: linear-gradient(135deg, #663e70 0%, #c38dc3 100%); /* Gradient background for a dynamic look */
+  font-family: 'Dancing Script', cursive; /* Modern font */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  transition: opacity 1s ease, transform 1s ease; /* Transition for fade and zoom effect */
+}
+/* Transition effect */
+body.transition {
+  opacity: 0;
+  transform: scale(1.05); /* Zoom effect */
+}
+/* Header styling */
+header {
+  background-color: rgba(195, 141, 195, 0.9); /* Slightly transparent background for a soft look */
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Navigation styling */
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: 0 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+}
+
+/* Section styling */
+section {
+  padding: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Section heading styling */
+section h2 {
+  color: #222;
+  font-size: 2em;
+  font-weight: 600;
+  border-bottom: 2px solid #c38dc3;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+section p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Image styling */
+section img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+section img:hover {
+  transform: scale(1.05);
+}
+
+/* Gallery specific styling */
+.hobbies-list, .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Space between images */
+}
+
+figure {
+  margin: 0;
+  position: relative;
+}
+
+figure img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+figure img:hover {
+  transform: scale(1.05);
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 10px;
+  color: #666;
+}
+
+/* Footer styling */
+footer {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav a {
+    font-size: 1em;
+    margin: 0 10px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 1.5em;
+  }
+
+  .hobbies-list, .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid layout for smaller screens */
+  }
+}
